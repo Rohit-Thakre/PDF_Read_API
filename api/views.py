@@ -59,7 +59,8 @@ class PDF_TO_CSV(APIView):
                         csv_writer.writerow(row) 
 
                     except:
-                        return Response({'msg' : 'Error occured while processing pdf file'}, status=status.HTTP_406_NOT_ACCEPTABLE)
+                        pass
+                       # return Response({'msg' : 'Error occured while processing pdf file'}, status=status.HTTP_406_NOT_ACCEPTABLE)
 
             
             # Return CSV file as a response
